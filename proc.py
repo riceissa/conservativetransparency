@@ -2,6 +2,7 @@
 
 import csv
 import sys
+import re
 
 
 def main():
@@ -29,7 +30,7 @@ def main():
                 mysql_quote("year"),  # donation_date_precision
                 mysql_quote("donation log"),  # donation_date_basis
                 mysql_quote(""),  # cause_area
-                mysql_quote(""),  # url
+                mysql_quote(csv_to_url(sys.argv[1])),  # url
                 mysql_quote(""),  # donor_cause_area_url
                 mysql_quote(""),  # notes
                 mysql_quote(""),  # affected_countries
