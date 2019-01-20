@@ -11,8 +11,9 @@ First, go to the conservativetransparency.org page for the donor, e.g. http://co
 Download the CSV file by clicking on "Export CSV".
 
 Save the CSV file in the `data/` directory. Make sure that the slug for the
-donor (e.g. `earhart-foundation`) is at the start of the CSV file name; this is
-how we identify which CSV goes with which URL.
+donor (e.g. `earhart-foundation`) is at the start of the CSV file name (e.g.
+`earhart-foundation-2019-01-20-0-37-49.csv`); this is how we identify which CSV
+goes with which URL.
 
 If this was a new donor/URL, then record the URL in `proc.py`.
 
